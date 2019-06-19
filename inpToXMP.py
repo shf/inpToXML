@@ -11,13 +11,11 @@ from six import iterkeys, iteritems
 import re
 import csv
 import numpy as np
-import meshconvert as mc
 import fenics as fe
 import argparse
 import os
 from termcolor import cprint
 
-import xml_writer
 
 class State:
     Init, Unknown, Invalid, ReadHeading, ReadNodes, ReadCells, \
